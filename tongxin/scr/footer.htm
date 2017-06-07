@@ -1,0 +1,87 @@
+<div class="footNav">
+  <ul class="container">
+    <li><a href="http://tx.sy616.com/tx/">网站首页</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=1">关于同信</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=2">课程体系</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=13">公开活动</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=15">专项定制</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=16">管理咨询</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=17">教学团队</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=18">人才招聘</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=19">最新资讯</a></li>
+    <li><a href="http://tx.sy616.com/tx/plus/list.php?tid=23">会员服务</a></li>
+    <li class="top"><a href="#">TOP</a></li>
+  </ul>
+</div>
+<div class="footer">
+  <div class="container">
+    <p>东莞市同信教育咨询有限公司</p>
+    <p>公司地址: 东莞市长安镇长青南路286号浙莞商务中心1305~1308室</p>
+    <p>电话：0769-86006838 13694961971 13802371304</p>
+    <div class="copyright"><p>Copyright © 2017 All rights reserved  版权所有 · 长安同信</p></div>
+    <div class="ewm-footer">
+      <p><img src="{dede:global.cfg_templets_skin/}/default/images/ewm_footer.jpg" alt=""></p>
+      <p>扫一扫添加微信</p>
+    </div>
+    <div class="ewm-qq" style="width: 113px;position: absolute;left: 0;top: 0;">
+      <p><img src="{dede:global.cfg_templets_skin/}/default/images/ewm_qq.jpg" alt=""></p>
+      <p style="font-size:12px;color:#fff;">扫一扫加入该群</p>
+    </div>
+  </div>
+</div>
+
+
+<style type="text/css">
+  .kefu .closed{position:absolute;right:0;top:0;width:16px;height:16px;text-align:center;line-height:16px;font-size:16px;color:#fff;background-color:#0077ba;cursor:pointer;}
+  .kefu-fold{position:fixed;right:-30px;top:50%;height:100px;width:30px;padding:10px 6px;text-align:center;font-size:14px;background-color:#0077ba;color:#fff;cursor:pointer;}
+</style>
+
+<div class="kefu">
+  <span class="closed" id="closed">×</span>
+  <p><img src="{dede:global.cfg_templets_skin/}/default/images/kefu.jpg"></p>
+  <div class="demo k1">
+    <p class="ts">在线咨询</p>
+    <ul>
+      <li><a href="tencent://message/?uin=2355172872&Site=sc.chinaz.com&Menu=yes">· 热门课程</a></li>
+      <li><a href="tencent://message/?uin=2355172872&Site=sc.chinaz.com&Menu=yes">· 公开活动</a></li>
+      <li><a href="tencent://message/?uin=2850317962&Site=sc.chinaz.com&Menu=yes">· 专项定制</a></li>
+      <li><a href="tencent://message/?uin=2850317961&Site=sc.chinaz.com&Menu=yes">· 管理咨询</a></li>
+    </ul>
+  </div>
+  <div class="demo k2">
+    <p class="ts">会员答疑</p>
+    <ul>
+      <li><a href="tencent://message/?uin=2850317964&Site=sc.chinaz.com&Menu=yes">· 国地税</a></li>
+      <li><a href="tencent://message/?uin=2355172872&Site=sc.chinaz.com&Menu=yes">· 财税业务</a></li>
+      <li><a href="tencent://message/?uin=2850317963&Site=sc.chinaz.com&Menu=yes">· 政策解读</a></li>
+    </ul>
+  </div>
+  <div class="demo k3">
+    <p class="ts">联系电话</p>
+    <ul>
+      <li><a href="###">0769-86006838</a></li>
+      <li><a href="###">13694961971</a></li>
+      <li><a href="###">13802371304</a></li>
+    </ul>
+  </div>
+  <p class="returns" id="returns"><span>返回顶部</span></p>
+</div>
+<div class="kefu-fold" id="kefu-fold">点击展开</div>
+<script type="text/javascript">
+  $(function(){
+    $("#closed").bind('click',function(){
+      $(".kefu").animate({right:'-130px'},300,function(){
+        $(".kefu-fold").animate({right:0},300)
+      })
+    })
+    $("#kefu-fold").bind('click',function(){
+      $(".kefu-fold").animate({right:'-30px'},300,function(){
+        $(".kefu").animate({right:0},300)
+      })
+    })
+
+    $("#returns").click(function(){
+      $('body,html').animate({scrollTop:0},300);  
+    })
+  })
+</script>

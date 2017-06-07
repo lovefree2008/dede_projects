@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页—同信</title>
+<link rel="stylesheet" href="default/css/mindex.css" />
+<link rel="stylesheet" href="default/css/animate.min.css" />
+<script src="default/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="default/js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<style type="text/css">
+	.kefu .closed{position:absolute;right:0;top:0;width:16px;height:16px;text-align:center;line-height:16px;font-size:16px;color:#fff;background-color:#f1f1f1;cursor:pointer;}
+	.kefu-fold{position:fixed;right:-30px;top:50%;height:100px;width:30px;padding:10px 6px;text-align:center;font-size:14px;background-color:#0077ba;color:#fff;cursor:pointer;}
+</style>
+
+<div class="kefu">
+	<span class="closed" id="closed">×</span>
+	<p><img src="default/images/kefu.jpg"></p>
+	<div class="demo k1">
+		<p class="ts">在线咨询</p>
+		<ul>
+			<li><a href="###">· 热门课程</a></li>
+			<li><a href="###">· 公开活动</a></li>
+			<li><a href="###">· 专项定制</a></li>
+			<li><a href="###">· 管理咨询</a></li>
+		</ul>
+	</div>
+	<div class="demo k2">
+		<p class="ts">会员答疑</p>
+		<ul>
+			<li><a href="###">· 国地税</a></li>
+			<li><a href="###">· 财税业务</a></li>
+			<li><a href="###">· 政策解读</a></li>
+		</ul>
+	</div>
+	<div class="demo k3">
+		<p class="ts">联系电话</p>
+		<ul>
+			<li><a href="###">0769-86006838</a></li>
+			<li><a href="###">13694961971</a></li>
+			<li><a href="###">13802371304</a></li>
+		</ul>
+	</div>
+	<p class="returns" id="returns"><span>返回顶部</span></p>
+</div>
+<div class="kefu-fold" id="kefu-fold">点击展开</div>
+<script type="text/javascript">
+	$(function(){
+		$("#closed").bind('click',function(){
+			$(".kefu").animate({right:'-130px'},300,function(){
+				$(".kefu-fold").animate({right:0},300)
+			})
+		})
+		$("#kefu-fold").bind('click',function(){
+			$(".kefu-fold").animate({right:'-30px'},300,function(){
+				$(".kefu").animate({right:0},300)
+			})
+		})
+
+		$("#returns").click(function(){
+			$('body,html').animate({scrollTop:0},300);  
+		})
+	})
+</script>
+
+</body>
+</html>

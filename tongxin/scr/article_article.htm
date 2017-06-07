@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/default/css/mindex.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="{dede:global.cfg_templets_skin/}/default/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<!-- /header -->
+
+<div class="a-banner">
+  <p style="background-image:url({dede:global.cfg_templets_skin/}/default/images/a_banner7.jpg);"></p>
+</div>
+
+<div class="a-body">
+  <div class="container clearfix">
+    <div class="a-left l">
+      <div class="modoul">
+        <div class="hds color">
+          <span class="ch">最新资讯</span>
+          <span class="en">information</span>
+        </div>
+      </div>
+      <div class="modoul">
+        <div class="hds color1">
+          <span class="ch">公开活动</span>
+          <span class="en">activity</span>
+        </div>
+      </div>
+      <div class="modoul">
+        <div class="hds color2">
+          <span class="ch">课程体系</span>
+          <span class="en">system</span>
+        </div>
+      </div>
+      {dede:include filename="left_contact.htm"/}
+    </div>
+    <div class="a-right r">
+      <div class="curthis">
+        <p class="l ten">
+          <span class="ch">{dede:field name='typename'/}</span>|
+          <span class="en">Teaching team</span>
+        </p>
+        <p class="r">当前位置：{dede:field name='position'/}</p>
+      </div>
+      <div class="r-content">
+        
+        <div class="news-detail">
+          <p class="titles">{dede:field.title/}</p>
+          <div class="info">
+            <small>时间:</small>{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}<small>来源:</small>{dede:field.source/} <small>作者:</small>{dede:field.writer/}
+          </div>
+          <div class="news-body">
+            {dede:field.body/}
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  
+</div>
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

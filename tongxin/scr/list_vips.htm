@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/default/css/mindex.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="{dede:global.cfg_templets_skin/}/default/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<!-- /header -->
+
+<div class="a-banner">
+  <p style="background-image:url({dede:global.cfg_templets_skin/}/default/images/a_banner8.jpg);"></p>
+</div>
+
+<div class="a-body">
+  <div class="container vips">
+    <h2>追求卓越  只因有您</h2>
+    <p class="infos">同信会员，致力于为财务人打造提供前沿、深度的全方位财务管理能力发展与提升平台。通过线上线下多维的传播途径，透析知名企业的财务管理实践、分享财务名家的成功经验、剖析财务实践难题等，伴随与帮助广大财务精英持续成长，共促进步。</p>
+    <p><img src="{dede:global.cfg_templets_skin/}/default/images/vip.jpg" alt=""></p>
+  </div>
+  <div class="container clearfix">
+    <div class="a-left l">
+
+      <div class="modoul">
+        <div class="hds color1">
+          <span class="ch">专项定制</span>
+          <span class="en">Special </span>
+        </div>
+      </div>
+      <div class="modoul">
+        <div class="hds color2">
+          <span class="ch">公开活动</span>
+          <span class="en">activity</span>
+        </div>
+      </div>
+      {dede:include filename="left_contact.htm"/}
+    </div>
+    <div class="a-right r">
+      <div class="curthis">
+        <p class="l ten">
+          <span class="ch">{dede:field name='typename'/}</span>|
+          <span class="en">Teaching team</span>
+        </p>
+        <p class="r">当前位置：{dede:field name='position'/}</p>
+      </div>
+      <div class="r-content">
+        
+        {dede:field.content/}
+        <div class="fds-small">
+          <h2>报名会员</h2>
+          <div class="feedbacks">
+            <form action="" method="get" accept-charset="utf-8">
+              <div class="row-2">
+                <div class="groups l">
+                  <label>姓名</label>
+                  <input type="text">
+                </div>
+                <div class="groups r">
+                  <label>电话</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row-2">
+                <div class="groups l">
+                  <label>邮箱</label>
+                  <input type="text">
+                </div>
+                <div class="groups r">
+                  <label>公司</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row-2">
+                <div class="groups l">
+                  <label>部门</label>
+                  <input type="text">
+                </div>
+                <div class="groups r">
+                  <label>岗位</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row-1">
+                <div  class="groups">
+                  <textarea name="" placeholder="内容"></textarea>
+                </div>
+              </div>
+              <div class="m-btns">
+                <a href="###" class="tj">提交</a>
+                <a href="###" class="cz">重置</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+</div>
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

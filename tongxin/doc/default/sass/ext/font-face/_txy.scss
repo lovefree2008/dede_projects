@@ -1,0 +1,15 @@
+@charset "UTF-8";
+//-----------------------------------------------------	
+// variables scss
+//-----------------------------------------------------
+
+$fontFamily:            FontAwesome !default;
+$fontFilePath:          "../font/iconfont" !default;
+$fontClassAllSwitch:    true !default;
+$fontClassPrefix:       icon !default;
+$fontClassoutput:       () !default;
+
+//名称&内容列表
+$fontClassAll:      txy-left  				"\e61f",
+					txy-right  				"\e624",
+					txy-tel  				"\e604" !default;

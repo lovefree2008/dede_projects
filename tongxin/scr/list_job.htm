@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/default/css/mindex.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="{dede:global.cfg_templets_skin/}/default/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<!-- /header -->
+
+<div class="a-banner">
+  <p style="background-image:url({dede:global.cfg_templets_skin/}/default/images/a_banner5.jpg);"></p>
+</div>
+
+<div class="a-body">
+  <div class="container clearfix">
+    <div class="a-left l">
+      <div class="modoul">
+        <div class="hds color">
+          <span class="ch">人才招聘</span>
+          <span class="en">Talent</span>
+        </div>
+      </div>
+      <div class="modoul">
+        <div class="hds color1">
+          <a href="/tx/plus/list.php?tid=15" target="_blank">
+            <span class="ch">专项定制</span>
+            <span class="en">Special </span>
+          </a>
+        </div>
+      </div>
+      <div class="modoul">
+        <div class="hds color2">
+          <a href="/tx/plus/list.php?tid=2" target="_blank">
+            <span class="ch">课程体系</span>
+            <span class="en">system</span>
+          </a>
+        </div>
+      </div>
+      {dede:include filename="left_contact.htm"/}
+    </div>
+    <div class="a-right r">
+      <div class="curthis">
+        <p class="l ten">
+          <span class="ch">{dede:field name='typename'/}</span>|
+          <span class="en">Talent recruitment</span>
+        </p>
+        <p class="r">当前位置：{dede:field name='position'/}</p>
+      </div>
+      <div class="r-content">
+        <div class="r-module">
+          <h2>人才招聘</h2>
+          <p class="info" style="line-height:2;">为了更好地服务我们的学员与企业，我们尝试在学员与企业会员之间建立一条优质的连接通道，方便优质企业与优质学员的对接。鉴于此，我们特推出此就业招聘专栏，只为得到您的钟爱。</p>
+
+          <h3 style="text-align:center;line-height:60px;font-size:24px;color:#666;font-weight:bold;margin-top:20px;">加入我们</h3>
+          <table class="tb1 jobs" style="margin-bottom:50px;">
+            <thead style="line-height:40px;">
+              <tr>
+                <th style="font-size:20px;font-weight:normal;">职位名称</th>
+                <th style="font-size:20px;font-weight:normal;">校区</th>
+                <th style="font-size:20px;font-weight:normal;">薪酬</th>
+                <th style="font-size:20px;font-weight:normal;">发布日期</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              {dede:list pagesize='1200'}
+              <tr onclick="alinks('[field:arcurl/]');" style="cursor:pointer;">
+                <td>[field:title/]</td>
+                <td>[field:typename/] </td>
+                <td>[field:jobprice/]</td>
+                <td>[field:pubdate function=strftime('%Y-%m-%d',@me)/]</td>
+              </tr>
+              {/dede:list}
+             <!--  <tr onclick="alinks('http://www.taobao.com');" style="cursor:pointer;">
+                <td>课程顾问 </td>
+                <td>长安校区 </td>
+                <td>4~6k </td>
+                <td>2017.4.2</td>
+              </tr> -->
+
+            </tbody>
+          </table>
+          <script type="text/javascript">
+            function alinks(url){
+               window.open(url)
+            }
+          </script>
+          <p class="mores"><a href="/tx/plus/list.php?tid=34" target="_blank">了解更多</a></p>
+          <h3 style="text-align:center;line-height:60px;font-size:24px;color:#666;font-weight:bold;margin-top:20px;">企业招聘</h3>
+          <table class="tb1 jobs" style="margin-bottom:50px;">
+            <thead style="line-height:40px;">
+              <tr>
+                <th style="font-size:20px;font-weight:normal;">职位名称</th>
+                <th style="font-size:20px;font-weight:normal;">公司名称</th>
+                <th style="font-size:20px;font-weight:normal;">工作地点</th>
+                <th style="font-size:20px;font-weight:normal;">薪酬待遇</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mores"><a href="/tx/plus/list.php?tid=101" target="_blank">了解更多</a></p>
+          <h3 style="text-align:center;line-height:60px;font-size:24px;color:#666;font-weight:bold;margin-top:20px;">优质学员库</h3>
+          <table class="tb1 jobs" style="margin-bottom:50px;">
+            <thead style="line-height:40px;">
+              <tr>
+                <th style="font-size:20px;font-weight:normal;">意向岗位</th>
+                <th style="font-size:20px;font-weight:normal;">学员姓名</th>
+                <th style="font-size:20px;font-weight:normal;">学员年龄</th>
+                <th style="font-size:20px;font-weight:normal;">发布日期</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mores"><a href="/tx/plus/list.php?tid=102" target="_blank">了解更多</a></p>
+          <h2>校企合作专栏</h2>
+          <h3 style="text-align:center;line-height:60px;font-size:24px;color:#666;font-weight:bold;">2016届同信财税专班尖子库 </h3>
+          <table class="tb1 jobs" style="margin-bottom:50px;">
+            <thead style="line-height:40px;">
+              <tr>
+                <th style="font-size:20px;font-weight:normal;">姓名</th>
+                <th style="font-size:20px;font-weight:normal;">性别</th>
+                <th style="font-size:20px;font-weight:normal;">期待岗位</th>
+                <th style="font-size:20px;font-weight:normal;">期望薪酬</th>
+                <th style="font-size:20px;font-weight:normal;">期望地点</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mores"><a href="/tx/plus/list.php?tid=103" target="_blank">了解更多</a></p>
+          <h3 style="text-align:center;line-height:60px;font-size:24px;color:#666;font-weight:bold;">2017届同信财税专班尖子库  </h3>
+          <table class="tb1 jobs" style="margin-bottom:50px;">
+            <thead style="line-height:40px;">
+              <tr>
+                <th style="font-size:20px;font-weight:normal;">姓名</th>
+                <th style="font-size:20px;font-weight:normal;">性别</th>
+                <th style="font-size:20px;font-weight:normal;">期待岗位</th>
+                <th style="font-size:20px;font-weight:normal;">期望薪酬</th>
+                <th style="font-size:20px;font-weight:normal;">期望地点</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="mores"><a href="/tx/plus/list.php?tid=104" target="_blank">了解更多</a></p>
+          <h2>就业招聘说明</h2>
+          <p class="info" style="line-height:2;">加入同信的讲师团队，必须经过多轮严格的甄选。我们不考虑只有理论基础，没有实践经验的讲师，也不考虑只有实践经验，而无法将经验升华为理论和知识的讲师。理论水平和实践经验兼备，但对培训没有热情，或者无法习得优秀授课技巧的人，也不是这个团队的人选。不认同“正直、以客户为中心、专业、追求卓越”的同信价值观，我们更会敬而远之。所以，同信讲师团队中的每一位成员，都是百里挑一的财务培训专家。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</div>
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.tabs{
+    display:block;
+    text-align:center;
+    p{
+        text-align:center;
+        display:inline-block;
+        @extend %clearfix;
+        a{
+            position:relative;
+            color:#696969;
+            &:hover,
+            &.oncur{
+               color:#1070bc;
+            }
+        }
+    }
+}
+
+
+.tabs-content{
+    .contents{
+        display:none;
+        height:100%;
+        &.active{
+            display:block;
+        }
+    }
+
+    .fade{
+        @include prefixer(transition,opacity .3s ease-out,o webkit ms moz);
+        opacity: 0;
+        &.in{
+           opacity: 1; 
+        }
+    }
+}

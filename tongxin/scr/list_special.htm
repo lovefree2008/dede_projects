@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/default/css/mindex.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="{dede:global.cfg_templets_skin/}/default/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<!-- /header -->
+
+<div class="a-banner">
+  <p style="background-image:url({dede:global.cfg_templets_skin/}/default/images/a_banner4.jpg);"></p>
+</div>
+
+<div class="a-body">
+  <div class="container clearfix">
+    <div class="a-left l">
+      <div class="modoul">
+        <div class="hds color">
+          <span class="ch">专项定制</span>
+          <span class="en">Special</span>
+        </div>
+      </div>
+      <div class="modoul">
+        <div class="hds color1">
+          <span class="ch">课程体系</span>
+          <span class="en">system</span>
+        </div>
+      </div>
+
+      {dede:include filename="left_contact.htm"/}
+    </div>
+    <div class="a-right r">
+      <div class="curthis">
+        <p class="l ten">
+          <span class="ch">{dede:field name='typename'/}</span>|
+          <span class="en">About us</span>
+        </p>
+        <p class="r">当前位置：{dede:field name='position'/}</p>
+      </div>
+      <div class="r-content">
+        {dede:field.content/}
+        <div class="fds-small">
+          <h2>课程套餐定制</h2>
+          <p class="p">在“知识螺旋化”的社会化学习阶段，企业需要定制适合自己的个性化课程，将隐形、零散的企业知识显性化和系统化，使企业多年积累的经验得以有效沉淀和传承。同信凭借十多年的开发经验，致力于为客户提供专业优质的课程定制服务，让学习更轻松更有效。</p>
+          <div class="feedbacks">
+            <form action="" method="get" accept-charset="utf-8">
+              <div class="row-2">
+                <div class="groups l">
+                  <label>姓名</label>
+                  <input type="text">
+                </div>
+                <div class="groups r">
+                  <label>电话</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row-2">
+                <div class="groups l">
+                  <label>邮箱</label>
+                  <input type="text">
+                </div>
+                <div class="groups r">
+                  <label>公司</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row-2">
+                <div class="groups l">
+                  <label>部门</label>
+                  <input type="text">
+                </div>
+                <div class="groups r">
+                  <label>岗位</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="row-1">
+                <div  class="groups">
+                  <textarea name="" placeholder="我要定制：如《财务报表阅读与分析》+《多元智能学习实战》+《国学智慧与个人修养》+《企业注销环节所得税和个人所得税管理》"></textarea>
+                </div>
+              </div>
+              <div class="m-btns">
+                <a href="###" class="tj">提交</a>
+                <a href="###" class="cz">重置</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

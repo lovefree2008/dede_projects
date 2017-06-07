@@ -1,0 +1,119 @@
+<div class="topBox">
+  <div class="container topCon">
+    <p class="topLeft l"><a href="http://wx.tongxinedu.com/uc/login" target="_blank">登陆</a><span>|</span><a href="http://wx.tongxinedu.com/uc/register"target="_blank">免费注册</a></p>
+    <p class="topRight r">Tell : 0769-86006838!</p>
+  </div>
+</div>
+
+<div class="headBox container">
+  <p class="logo l"><a href="#"><img src="{dede:global.cfg_templets_skin/}/default/images/logo.png"></a></p>
+  <div class="s-ch r">
+    <div class="s-ch-box">
+      <p class="r-group l"><i></i><input type="text" placeholder="请输入关键词"></p>
+      <p class="s-btn l"><a href="###" title="搜索有惊喜">搜索</a></p>
+    </div>
+    <div class="s-hot">
+      <span>热门搜索：</span>
+      <ul>
+        <li><a href="###">税务稽查</a></li>
+        <li><a href="###">税务策划</a></li>
+        <li><a href="###">并购重租</a></li>
+        <li><a href="###">避税与反避税</a></li>
+      </ul>
+      <span class="refresh r">换一批</span>
+    </div>
+  </div>
+</div>
+
+<div class="navBox">
+  <div class="container">
+    <ul>
+      <li><a href="/tx">网站首页</a></li>
+      <li>
+        <a href="/tx/plus/list.php?tid=1">关于同信</a>
+      </li>
+      <li>
+        <a href="/tx/plus/list.php?tid=2">课程体系</a>
+        <p class="subNav">
+          <a href="/tx/plus/list.php?tid=3">财务实操</a>
+          <a href="/tx/plus/list.php?tid=4">财务增值课程</a>
+          <a href="/tx/plus/list.php?tid=5">税务课程</a>
+        </p>
+        <div class="sn-box">
+
+          <div class="sn-list clearfix">
+
+            {dede:channelartlist typeid='3'}
+            <dl class="l">
+              <dt class="hds"><a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a></dt>
+              {dede:channel type='sun'}
+              <dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+              {/dede:channel}
+            </dl>
+            {/dede:channelartlist}
+
+          </div>
+
+          <div class="sn-list clearfix" style="display:none;">
+            {dede:channelartlist typeid='4'}
+            <dl class="l">
+              <dt class="hds"><a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a></dt>
+              {dede:channel type='sun'}
+              <dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+              {/dede:channel}
+            </dl>
+            {/dede:channelartlist}
+          </div>
+          <div class="sn-list clearfix" style="display:none;width:1000px;">
+            {dede:channelartlist typeid='5'}
+            <dl class="l" style="height:290px;">
+              <dt class="hds"><a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a></dt>
+              {dede:channel type='sun'}
+              <dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+              {/dede:channel}
+            </dl>
+            {/dede:channelartlist}
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="/tx/plus/list.php?tid=13">公开活动</a>
+        <p class="subNav">
+          <a href="/tx/plus/list.php?tid=13">公开课</a>
+          <a href="/tx/plus/list.php?tid=14">公开沙龙</a>
+        </p>
+      </li>
+      <li><a href="/tx/plus/list.php?tid=15">专项定制</a></li>
+      <li><a href="/tx/plus/list.php?tid=16">管理咨询</a></li>
+      <li><a href="/tx/plus/list.php?tid=17">教学团队</a></li>
+      <li><a href="/tx/plus/list.php?tid=18">人才招聘</a></li>
+      <li><a href="/tx/plus/list.php?tid=19">最新资讯</a></li>
+      <li><a href="/tx/plus/list.php?tid=23">会员服务</a></li>
+      <li><a href="/tx/plus/list.php?tid=24">联系我们</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  $(function(){
+    var timer;
+    $(".subNav").hover(function(){
+      $(this).siblings(".sn-box").show();
+    },function(){
+      var self = $(this)
+      timer = setTimeout(function(){
+        self.siblings(".sn-box").hide();
+      },200)
+    });
+    $(".subNav a").hover(function(){
+      var sn = $(".sn-list")
+      var cur = $(this).index();
+      sn.eq(cur).show().siblings(".sn-list").hide();
+    });
+    $(".sn-box").hover(function(){
+      clearTimeout(timer);
+    },function(){
+      $(this).hide();
+    })
+  })
+</script>

@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_templets_skin/}/default/css/mindex.css" rel="stylesheet" media="screen" type="text/css" />
+<script src="{dede:global.cfg_templets_skin/}/default/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<!-- /header -->
+
+<div class="a-banner a2" style="background-image:url({dede:global.cfg_templets_skin/}/default/images/a_banner2.jpg);">
+  <div class="container kecheng">
+    <h1>同信财税课程体系</h1>
+    <p class="en">Fiscal and taxation system</p>
+    <ul class="clearfix list xl">
+      <li>
+        <a href="/tx/plus/list.php?tid=3" class="a">
+          <i class="icon"><img src="{dede:global.cfg_templets_skin/}/default/images/icon/icon1.png" alt=""></i>
+          <p class="title">财务实操</p>
+        </a>
+          <dl>
+            {dede:channelartlist typeid='3'}
+              <dd><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></dd>
+            {/dede:channelartlist}
+          </dl>
+      </li>
+      <li>
+        <a href="/tx/plus/list.php?tid=4" class="a">
+          <i class="icon"><img src="{dede:global.cfg_templets_skin/}/default/images/icon/icon2.png" alt=""></i>
+          <p class="title">财务增值课程</p>
+        </a>
+          <dl>
+            {dede:channelartlist typeid='4'}
+              <dd><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></dd>
+            {/dede:channelartlist}
+          </dl>
+      </li>
+      <li>
+        <a href="/tx/plus/list.php?tid=5" class="a">
+          <i class="icon"><img src="{dede:global.cfg_templets_skin/}/default/images/icon/icon3.png" alt=""></i>
+          <p class="title">税务课程</p>
+        </a>
+          <dl>
+            {dede:channelartlist typeid='5'}
+              <dd><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></dd>
+            {/dede:channelartlist}
+          </dl>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="b-banner">
+  <p>{dede:field name='typename'/}</p>
+</div>
+
+<div class="c-banner">
+  <p style="background-image:url({dede:global.cfg_templets_skin/}/default/images/c_banner1.jpg);"></p>
+</div>
+
+
+<div class="a-body">
+  <div class="container clearfix">
+    <div class="a-left l">
+      <div class="modoul">
+        <div class="hds color">
+          <span class="ch">税务课程</span>
+          <span class="en">Course US</span>
+        </div>
+        <div class="infos">
+          <ul>
+            {dede:channel type='son' currentstyle="
+            <li class='oncur'><a href='~typelink~'>~typename~</a></li>
+            "}
+            <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+            {/dede:channel}
+
+            <!-- {dede:channelartlist typeid='3' currentstyle="
+            <li><a href='~typelink~' class='oncur'>~typename~</a></li>
+            "}
+              <li><a href='{dede:field name='typeurl'/}'>{dede:field name='typename'/}</a></li>
+            {/dede:channelartlist} -->
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="modoul">
+        <div class="hds color1">
+          <span class="ch">教学团队</span>
+          <span class="en">Teaching team</span>
+        </div>
+      </div>
+      <div class="modoul">
+        <div class="hds color2">
+          <span class="ch">专项定制</span>
+          <span class="en">customization</span>
+        </div>
+      </div>
+
+      {dede:include filename="left_contact.htm"/}
+
+    </div>
+    <div class="a-right r">
+      <div class="curthis">
+        <p class="l ten">
+          <span class="ch">{dede:field name='typename'/}</span>|
+          <span class="en">COURSE</span>
+        </p>
+        <p class="r">当前位置：{dede:field name='position'/}</p>
+      </div>
+      <div class="r-content">
+        {dede:field.content/}
+      </div>
+    </div>
+  </div>
+
+  <div class="container feedbacks">
+    <div class="titles">课程咨询/试听申请/索取大纲</div>
+    <form action="" method="get" accept-charset="utf-8">
+      <div class="row-2">
+        <div class="groups l">
+          <label>姓名</label>
+          <input type="text">
+        </div>
+        <div class="groups r">
+          <label>电话</label>
+          <input type="text">
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="groups l">
+          <label>邮箱</label>
+          <input type="text">
+        </div>
+        <div class="groups r">
+          <label>公司</label>
+          <input type="text">
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="groups l">
+          <label>部门</label>
+          <input type="text">
+        </div>
+        <div class="groups r">
+          <label>岗位</label>
+          <input type="text">
+        </div>
+      </div>
+      <div class="row-1">
+        <div class="groups">
+          <!-- <label>内容</label> -->
+          <textarea name="">内容</textarea>
+        </div>
+      </div>
+      <div class="m-btns">
+        <a href="###" class="tj">提交</a>
+        <a href="###" class="cz">重置</a>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+{dede:include filename="footer.htm"/}
+<!-- /footer -->
+</body>
+</html>

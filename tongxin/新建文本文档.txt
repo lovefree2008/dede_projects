@@ -1,0 +1,14 @@
+[主机控制面板信息]
+========================================================================
+网     址: http://www.ns365.net/
+用 户 名 ：H10072045
+密    码 ：at4821Hb
+
+[网站基本信息]
+========================================================================
+网     址：http://dgtongxinedu.com/
+绑定 别名：dgtongxinedu.com；www.dgtongxinedu.com；
+网站CNAME记录：vip4184.xydcname.net *请将www域名CNAME记录解析这里的CNAME域名
+ftp 地 址：ftp101442.gzonet.net
+ftp用户名：webmaster@H10072045
+ftp密  码：g8o9L7Z1
